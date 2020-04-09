@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">  
+    <title>Calculate the area of a trapezoid</title>
+  </head>
+  <body>
+    <h1> Calculate the area of a trapezoid</h1>
+    <p>Enter your numbers in the textboxes below!</p>
+    <p>top base length</p>
+    <input type="text" id="textbox">
+    <p>bottom base length</p>
+    <input type="text" id="textbox2">
+    <p>height length</p>
+    <input type="text" id="textbox3">
+    <button id="Button">Calculate</button>
+    <script>
+     let topBase;
+     let bottomBase;
+     let height;
+     let trapezoidArea;
+function areaOfTrapezoid() {
+ topBase=document.getElementById("textbox").value;
+ bottomBase=document.getElementBiId("textbox2").value;
+ height=document.getElementByid("textbox3").value;
+ trapezoidArea=topBase+bottomBase/2*height;
+ alert("The area of the trapezoid is "+ trapezoidArea);
+document.getElementById("Button").addEventListener
+  ("click", areaOfTrapezoid);
+}  
+    </script>
+  </body>
+</html>
